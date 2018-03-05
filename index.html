@@ -7,11 +7,11 @@
   <body>
 
     <header class="main-header">
-      <nav class="main-nav">
-        <a class="main-logo">
+      <nav class="nav">
+        <a class="logo">
           <img src="img/index-logo.svg" width="50" height="50" alt="Логотип городка Sedona">
         </a>
-        <ul class="main-menu">
+        <ul class="menu">
           <li><a href="info.html">Информация</a></li>
           <li><a href="foto.html">Фото и видео</a></li>
           <li><a href="#">Карта штата</a></li>
@@ -20,68 +20,65 @@
       </nav>
     </header>
 
-    <main class="container">
-
-      <h1 class="conteiner-caption">
-        <span class="style-1">Welcome</span><br>
-        <span class="style-2">to the gorgeous</span><br>
-        <span class="style-3">Sedona</span>
-      </h1>
-
-      <section class="welcome">
-        <h2 class="visualli-hidden">Вид на Grand Canyon</h2>
+    <main class="main-content">
+      <section class="promo">
+        <h2 class="visualli-hidden">Welcome Sedonna</h2>
         <img class="welcome-canyon" src="img/index-canyon.svg"
           width="500" height="300" alt="Великолепный вид на Grand Canyon">
-        <p>
-          <span class="style-2">"Beсause the Grand Canyon sucks!"</span>
-        </p>
-        <p>Cедона - небольшой городок в Аризоне, заслуживающий большего!</p>
       </section>
 
       <section class="sigths">
+        <header class="sigths-header">
+          <h1>Cедона - небольшой городок в Аризоне, заслуживающий большего!</h1>
+          <p>
+            Рассмотрим 5 причин, по которым Седона круче чем Гранд Каньон!
+          </p>
+        </header>
+
         <h2 class="visualli-hidden">Достопримечательности</h2>
-        <p>
-          Рассмотрим 5 причин, по которым Седона круче чем Гранд Каньон!
-        </p>
         <ol class="sigths-list">
           <li class="sigths-item">
-            <h3>Настоящий городок</h3>
-            <p>Седона - не атракцион для туристов, там течет своя жизнь</p>
+            <div class="info">
+              <h3>Настоящий городок</h3>
+              <p>Седона - не атракцион для туристов, там течет своя жизнь</p>
+            </div>
             <img src="img/index-town" width="300" height="150" alt="Вид на красивейший городок">
 
             <section class="features">
-              <h3 class="visualli-hiden">Особенности</h3>
+              <h2 class="visualli-hidden">Особенности</h2>
               <ul class="features-list">
                 <li class="features-item">
-                  <h4>Жилье</h4>
+                  <h3>Жилье</h3>
                   <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
                 </li>
                 <li class="features-item">
-                  <h4>Еда</h4>
+                  <h3>Еда</h3>
                   <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
                 </li>
                 <li class="features-item">
-                  <h4>Сувениры</h4>
+                  <h3>Сувениры</h3>
                   <p>Не только китайского, но и местного производства!</p>
                 </li>
               </ul>
             </section>
 
           </li>
-          <li class="sigths-item">
-            <h3>Там есть мост дьявола</h3>
-            <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+          <li class="sigths-item reverse">
+            <div class="info">
+              <h3>Там есть мост дьявола</h3>
+              <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+            </div>
             <img src="img/index-bridge" width="300" height="150" alt="Мост дьявола">
           </li>
-          <li class="sigths-item">
+          <li class="sigths-item-gray">
             <h3>Небольшая площадь</h3>
             <p>Все достопримечательности находятся очень близко</p>
           </li>
-          <li class="sigths-item">
+          <li class="sigths-item-gray">
             <h3>Красивая дорога</h3>
             <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </li>
-          <li class="sigths-item">
+          <li class="sigths-item-gray">
             <h3>Мало туристов</h3>
             <p>Большинство едет в Гранд Каньон и толпится там</p>
           </li>
@@ -99,29 +96,25 @@
       </section>
 
       <section class="map">
-        <h2 class="visualli-hiden">Как приехать в Седонну</h2>
+        <h2 class="visualli-hidden">Как приехать в Седонну</h2>
         <span>Здесь будет карта</span>
       </section>
-
     </main>
 
     <footer class="main-footer">
-      <p class="footer-left">
-        <b>#Visitsedona</b>
+      <p class="heshtag">
+        #Visitsedona
       </p>
 
-      <div class="footer-social">
-        <ul class="social-list">
-          <li><a class="social-button" href="#">twitter</a></li>
-          <li><a class="social-button" href="#">facebook</a></li>
-          <li><a class="social-button" href="#">youtube</a></li>
+        <ul class="social">
+          <li><a class="social-button tw" href="#">twitter</a></li>
+          <li><a class="social-button fb" href="#">facebook</a></li>
+          <li><a class="social-button yt" href="#">youtube</a></li>
         </ul>
-      </div>
 
-      <p class="footer-copiright">
-        Website by <a href="https://htmlacademy.ru/intensive/htmlcss">html academi</a>
+      <p class="copyright">
+        Website by <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">html academi</a>
       </p>
     </footer>
-
   </body>
 </html>
