@@ -94,12 +94,36 @@
           и мы покажем Вам лучшие предложения гостиниц в Седоне
         </p>
         <button class="searh-button" type="button">Поиск гостиницы в Седоне</button>
-        <span>Здесь будет форма</span>
+        <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="visualli-hidden">
+            <legend class="visualli-hidden">Поиск гостиницы</legend>
+            <p class="search-item date">
+              <label for="arrival">Дата заезда:</label>
+              <input type="text" name="arrival" id="arrival" value=""
+                placeholder="24 апреля 2017" required>
+            </p>
+            <p class="search-item date">
+              <label for="departure">Дата выезда:</label>
+              <input type="text" name="departure" id="departure" value=""
+                placeholder="4 июля 2017" required>
+            </p>
+            <p class="search-item persons">
+              <label for="adult">Взрослые:</label>
+              <input type="number" name="adult" id="adult" value="2" min="0">
+            </p>
+            <p class="search-item persons">
+              <label for="children">Дети:</label>
+              <input type="number" name="children" id="children" value="0" min="0">
+            </p>
+            <button class="find-button" type="button" name="button">Найти</button>
+          </fieldset>
+        </form>
       </section>
 
       <section class="map">
         <h2 class="visualli-hidden">Как приехать в Седонну</h2>
-        <img class="map-img" src="img/index-map.png" width="1200" height="593" alt="Как проехать в Седону">
+        <img class="map-img" src="img/index-map.png" width="1200" height="593"
+          alt="Как проехать в Седону">
       </section>
     </main>
 

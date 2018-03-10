@@ -25,12 +25,80 @@
 
       <section class="filtres">
         <h2 class="visualli-hidden">Фильтр поиска гостиницы</h2>
-        <span>Здесь будет фильтр поиска </span>
+
+        <form class="filtres-form" action="https://echo.htmlacademy.ru" method="get" oninput="min_result.value=min_price.value; max_result.value=max_price.value">
+          <fieldset class="infrastructure">
+            <legend>Инфраструктура:</legend>
+            <ul>
+              <li class="fitres-option">
+                <input class="visualli-hidden" type="checkbox" name="pool" id="pool" checked>
+                <label for="pool">Бассейн</label>
+              </li>
+              <li class="fitres-option">
+                <input class="visualli-hidden" type="checkbox" name="parking" id="parking">
+                <label for="parking">Парковка</label>
+              </li>
+              <li class="fitres-option">
+                <input class="visualli-hidden" type="checkbox" name="wi-fi" id="wi-fi">
+                <label for="wi-fi">Wi-fi</label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="hotel-type">
+            <legend>Тип жилья:</legend>
+            <ul>
+              <li class="filtres-option">
+                <input type="radio" name="hotel-type" id="hotel" checked>
+                <label for="hotel">Гостиница</label>
+              </li>
+              <li class="filtres-option">
+                <input type="radio" name="hotel-type" id="motel" checked>
+                <label for="motel">Мотель</label>
+              </li>
+              <li class="filtres-option">
+                <input type="radio" name="hotel-type" id="apartments" checked>
+                <label for="apartments">Апартаменты</label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="cost">
+            <legend>Стоимость в сутки (Р):</legend>
+            <div class="cost-result">
+              <output name="min_result">0</output>
+              <output name="max_result">3000</output>
+            </div>
+            <div class="cost-lever">
+              <input type="range" name="min_price" value="0" min="0" max="4000" step="100">
+              <input type="range" name="max_price" value="3000" min="0" max="4000" step="100">
+            </div>
+          </fieldset>
+
+          <button class="cost-button" type="button" name="button">Показать</button>
+        </form>
       </section>
 
       <section class="sorting">
         <h2 class="visualli-hidden">Сортировка найденного</h2>
-        <span>Здесь будет форма сортировки</span>
+        <p>Найдено: <output name="filter-result">3</output></p>
+        <p>Сортировка:</p>
+        <ul class="sorting-list">
+          <li class="sorting-item">
+            <button class="sorting-button" type="button" name="sorting-value">По цене</button>
+          </li>
+          <li class="sorting-item">
+            <button class="sorting-button" type="button" name="sorting-typ">По типу</button>
+          </li>
+          <li class="sorting-item">
+            <button class="sorting-button" type="button" name="sorting-rating">По рейтингу</button>
+          </li>
+        </ul>
+
+        <div class="sorting-arrow">
+          <button class="arrow-button" type="button" name="sorting-ascending">по возрастанию</button>
+          <button class="arrow-button-reverse" type="button" name="sorting-descending">по убыванию</button>
+        </div>
       </section>
 
       <section class="hotels">
@@ -46,11 +114,11 @@
               </h3>
               <div class="hotels-info-left">
                 <span class="hotels-item-type">Гостиница</span>
-                <a class="hotels-button-detailed" href="hotel-1.html">Подробней</a>
+                <a class="hotels-button detailed" href="hotel-1.html">Подробней</a>
               </div>
               <div class="hotels-info-right">
                 <span class="hotels-item-value">от 4000 Р</span>
-                <span>Забронировать</span><!--Здесь будет кнопка -->
+                <button class="hotels-button book" type="button" name="amara-book">Забронировать</button>
               </div>
             </div>
 
@@ -69,11 +137,11 @@
               </h3>
               <div class="hotels-info-left">
                 <span class="hotels-item-type">Мотель</span>
-                <a class="hotels-button-detailed" href="hotel-2.html">Подробней</a>
+                <a class="hotels-button detailed" href="hotel-2.html">Подробней</a>
               </div>
               <div class="hotels-info-right">
                 <span class="hotels-item-value">от 3000 Р</span>
-                <span>Забронировать</span><!--Здесь будет кнопка -->
+                <button class="hotels-button book" type="button" name="desert-book">Забронировать</button>
               </div>
             </div>
 
@@ -93,11 +161,11 @@
               </h3>
               <div class="hotels-info-left">
                 <span class="hotels-item-type">Апартаменты</span>
-                <a class="hotels-button-detailed" href="hotel-3.html">Подробней</a>
+                <a class="hotels-button detailed" href="hotel-3.html">Подробней</a>
               </div>
               <div class="hotels-info-right">
                 <span class="hotels-item-value">от 2000 Р</span>
-                <span>Забронировать</span><!--Здесь будет кнопка -->
+                <button class="hotels-button book" type="button" name="villas-book">Забронировать</button>
               </div>
             </div>
 
