@@ -34,11 +34,14 @@ a {
 .menu a:hover,
 .menu a:focus {
   color: #81b3d2;
-  outline: 0;
 }
 
 .menu a:active {
   color: rgba(0, 0, 0, 0.3);
+}
+
+.menu .menu-active {
+  color: #766357;
 }
 
 .sigths-header {
@@ -130,7 +133,6 @@ a {
 .search-form input:focus {
   background-color: #ffffff;
   border: 2px solid #e5e5e5;
-  outline: 0;
 }
 
 .person-minus,
@@ -145,7 +147,6 @@ a {
 .person-plus:hover,
 .person-plus:focus {
   color: #ffffff;
-  outline: 0;
 }
 
 .person-minus:active,
@@ -177,6 +178,101 @@ a {
 .main-footer {
   background-color: #ffffff;
   opacity: 0.9;
+}
+
+.filtres {
+  color: #ffffff;
+
+  background-color: #81b3d2;
+  background-image: url('../img/hotels-filter-background.jpg');
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.filtres fieldset {
+  border: none;
+}
+
+.filtres legend {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.filtres ul {
+  list-style: none;
+}
+
+.filtres .cost-button {
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  background-color: transparent;
+  border: 2px solid #ffffff;
+}
+
+.sorting .title {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+.sorting p {
+  font-size: 12px;
+  line-height: 18px;
+  color: #000000;
+}
+
+.sorting-list {
+  list-style: none;
+}
+
+.sorting-button {
+  font-size: 12px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.3);
+
+  background: none;
+  border: none;
+  border-bottom: 1px dashed #81b3d2;
+}
+
+.sorting-button:hover,
+.sorting-button:focus {
+  color: #81b3d2;
+}
+
+.sorting-button:active {
+  color: #000000;
+
+  border: none;
+}
+
+.sorting-button.active {
+  color: #81b3d2;
+  border: none;
+}
+
+.hotels-list {
+  list-style: none;
+}
+
+.hotels-info .hotel-name {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.hotels-info .hotel-name:hover,
+.hotels-info .hotel-name:focus {
+  color: #81b3d2;
+}
+
+.hotels-info .hotel-name:active {
+  color: rgba(0, 0, 0, 0.3)
 }
 
 .main-footer .heshtag {
