@@ -95,6 +95,10 @@ a {
 .searh-button {
   font-size: 21px;
   line-height: 26px;
+}
+
+.button-brown {
+  text-transform: inherit;
   font-weight: bold;
   color: #ffffff;
 
@@ -102,12 +106,12 @@ a {
   border: none;
 }
 
-.searh-button:hover,
-.searh-button:focus {
+.button-brown:hover,
+.button-brown:focus {
   background-color: #604e43;
 }
 
-.searh-button:active {
+.button-brown:active {
   color: rgba(255, 255, 255, 0.3);
 
   background-color: #503e33;
@@ -157,6 +161,10 @@ a {
 .find-button {
   font-size: 21px;
   line-height: 26px;
+}
+
+.button-blue {
+  text-transform: inherit;
   font-weight: bold;
   color: #ffffff;
 
@@ -164,12 +172,12 @@ a {
   border: none;
 }
 
-.find-button:hover,
-.find-button:focus {
+.button-blue:hover,
+.button-blue:focus {
   background-color: #669ec0;
 }
 
-.find-button:active {
+.button-blue:active {
   color: rgba(255, 255, 255, 0.3);
 
   background-color: #5496bd;
@@ -210,6 +218,13 @@ a {
 
   background-color: transparent;
   border: 2px solid #ffffff;
+}
+
+.filtres .cost-button:hover,
+.filtres .cost-button:focus {
+  color: #000000;
+
+  background-color: #ffffff;
 }
 
 .sorting .title {
@@ -285,23 +300,6 @@ a {
 .main-footer .social {
   text-align: center;
   list-style: none;
-}
-
-.social-button {
-  color: #ffffff;
-
-  background-color: #81b3d2;
-}
-
-.social-button:hover,
-.social-button:focus {
-  background-color: #669ec0;
-}
-
-.social-button:active {
-  color: rgba(255, 255, 255, 0.3);
-
-  background-color: #5496bd;
 }
 
 .main-footer .copyright {
