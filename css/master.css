@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
@@ -11,8 +12,19 @@ body {
   background-color: white;
 }
 
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
 a {
   text-decoration: none;
+}
+
+.page-wrapper {
+  position: relative;
+  width: 1200px;
 }
 
 .nav {
@@ -20,15 +32,50 @@ a {
   line-height: 26px;
   color: #000000;
 
-  background-color: white
+  background-color: white;
+
+  outline: 1px solid green;
+}
+
+.logo {
+  position: absolute;
+  left: 531px;
 }
 
 .menu {
+  display: flex;
+  justify-content: space-between;
+
+  margin: 0;
+  padding: 0;
+
   list-style: none;
+
+  outline: 1px solid green;
+}
+
+.menu li {
+  display: inline-block;
+
+  text-align: center;
+  vertical-align: top;
+  width: 239px;
+  min-height: 56px;
+  margin: 0;
+  margin-right: -3px;
+  padding: 0;
+  padding-top: 15px;
+
+  outline: 1px solid green;
 }
 
 .menu a {
+  margin: 0;
+  padding: 0;
+
   color: #000000;
+
+  outline: 1px solid green;
 }
 
 .menu a:not(.menu-active):hover,
@@ -56,6 +103,9 @@ a {
 
 .sigths-list,
 .features-list {
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
@@ -63,16 +113,45 @@ a {
   text-align: center;
 }
 
-.sigths-item.blue {
+.sigths-item-blue {
+  display: flex;
+
   background-color: #81b3d2;
 }
 
+.sigths-item-blue.reverse {
+  flex-direction: row-reverse;
+}
+
 .sigths-item .info {
+  width: 400px;
+
   color: #ffffff;
 }
 
+.features-list {
+  display: flex;
+
+  margin: 0;
+  padding: 0;
+}
+
+.features-item {
+  width: 400px;
+
+  outline: 1px solid green;
+}
+
+.sigths-gray-container {
+  display: flex;
+}
+
 .sigths-item.gray {
+  width: 400px;
+
   background-color: #eeeeee;
+
+  outline: 1px solid green;
 }
 
 .sigths-item h3 {
@@ -81,6 +160,10 @@ a {
 
 .features {
   background-color: #ffffff;
+}
+
+.features-item {
+  text-align: center;
 }
 
 .search {
