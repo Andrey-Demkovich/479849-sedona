@@ -16,14 +16,10 @@
             <img src="img/logo.png" width="138" height="70" alt="Логотип городка Sedona">
           </a>
           <ul class="menu">
-            <div class="menu-left">
-              <li><a href="info.html">Информация</a></li>
-              <li><a href="foto.html">Фото и видео</a></li>
-            </div>
-            <div class="menu-right">
-              <li><a href="#">Карта штата</a></li>
-              <li><a href="hotels.html">Гостиницы</a></li>
-            </div>
+                <li class="menu-left"><a href="info.html">Информация</a></li>
+                <li class="menu-left"><a href="foto.html">Фото и видео</a></li>
+                <li class="menu-right"><a href="#">Карта штата</a></li>
+                <li class="menu-right"><a href="hotels.html">Гостиницы</a></li>
           </ul>
         </nav>
       </header>
@@ -31,10 +27,8 @@
       <main class="main-content">
         <section class="promo">
           <h2 class="visualli-hidden">Welcome to the gorgeous Sedonna</h2>
-          <img class="welcome" src="img/index-welcome.png" width="458" height="352"
+          <img class="welcome" src="img/index-welcome-fixed.jpg" width="1200" height="773"
             alt="Welcome to the gorgeous Sedonna. Because the Grand Canyon sucks">
-          <img class="canyon" src="img/index-canyon.jpg"
-            width="1200" height="773" alt="Великолепный вид на Grand Canyon">
         </section>
 
         <section class="sigths">
@@ -84,7 +78,6 @@
               <img class="sigths-img" src="img/index-bridge.jpg" width="800"
                 height="400" alt="Мост дьявола">
             </li>
-            <div class="sigths-gray-container">
               <li class="sigths-item gray">
                 <h3>Небольшая<br>площадь</h3>
                 <p>Все достопримечательности находятся очень близко</p>
@@ -97,7 +90,6 @@
                 <h3>Мало<br>туристов</h3>
                 <p>Большинство едет в Гранд Каньон и толпится там</p>
               </li>
-          </div>
           </ol>
         </section>
 
@@ -109,7 +101,7 @@
           </p>
           <button class="searh-button button-brown" type="button">Поиск гостиницы в Седоне</button>
           <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
-            <fieldset class="visualli-hidden">
+            <fieldset class="">
               <legend class="visualli-hidden">Поиск гостиницы</legend>
               <p class="search-item date">
                 <label for="arrival">Дата заезда:</label>
@@ -146,18 +138,19 @@
       </main>
 
       <footer class="main-footer">
-        <p class="heshtag">
-          #Visitsedona
+        <p class="footer-item heshtag">
+          <span class="center">#Visitsedona</span>
         </p>
 
-          <ul class="social">
+          <ul class="footer-item social">
             <li><a class="social-button button-blue tw" href="#">twitter</a></li>
             <li><a class="social-button button-blue fb" href="#">facebook</a></li>
             <li><a class="social-button button-blue yt" href="#">youtube</a></li>
           </ul>
 
-        <p class="copyright">
-          Website by <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">html academi</a>
+        <p class="footer-item copyright">
+          <span class="center">Website by
+            <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">html academi</a></span>
         </p>
       </footer>
     </div>
