@@ -1,7 +1,23 @@
+html {
+  box-sizing: border-box;
+}
+
+*,::before,::after {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
@@ -10,16 +26,6 @@ body {
   color: #333333;
 
   background-color: white;
-}
-
-*,
-::before,
-::after {
-  box-sizing: inherit;
-}
-
-a {
-  text-decoration: none;
 }
 
 .visualli-hidden {
@@ -52,7 +58,7 @@ a {
 
 .logo {
   position: absolute;
-  left: 531px;
+  left: calc(50% - 138px/2);
 
   outline: 1px solid green;
 }
@@ -67,7 +73,7 @@ a {
   outline: 1px solid green;
 }
 
-.menu li {
+.menu-item {
   width: 239px;
   padding-top: 15px;
   min-height: 56px;
@@ -75,19 +81,22 @@ a {
   outline: 1px solid green;
 }
 
-.menu li:nth-child(3) {
+.menu-item:nth-child(3) {
   margin-left: auto;
 }
 
-.menu-left a {
+.menu-item:first-child a,
+.menu-item:nth-child(2) a {
   margin-left: 73px;
 }
 
-.menu-right {
+.menu-item:nth-child(3),
+.menu-item:last-child {
   text-align: right;
 }
 
-.menu-right a {
+.menu-item:nth-child(3) a,
+.menu-item:last-child a {
   margin-right: 73px;
 }
 
@@ -108,6 +117,15 @@ a {
 
 .menu .menu-active {
   color: #766357;
+}
+
+.promo {
+  width: 1200px;
+  height: 773px;
+
+  background-image: url('../img/index-welcome-fixed.jpg');
+  background-repeat: no-repeat;
+  background-color: #81b3d2;
 }
 
 .sigths {
@@ -136,14 +154,12 @@ a {
 }
 
 .sigths-list {
+  display: flex;
+  flex-wrap: wrap;
+
   margin: 0;
   padding: 0;
   list-style: none;
-}
-
-.sigths-list {
-  display: flex;
-  flex-wrap: wrap;
 }
 
 .sigths-item {
@@ -458,7 +474,6 @@ a {
 
 .hotels-item {
   display: flex;
-  align-items: stretch;
 
   min-height: 150px;
   margin-top: 30px;
