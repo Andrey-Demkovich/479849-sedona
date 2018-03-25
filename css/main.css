@@ -25,7 +25,7 @@ body {
   text-transform: uppercase;
   color: #333333;
 
-  background-color: white;
+  background-color: #f2f2f2;
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -49,6 +49,8 @@ input[type="radio"].visually-hidden {
 .page-wrapper {
   width: 1200px;
   margin: 0 auto;
+  background-color: #ffffff;
+  box-shadow: 0 0 15px 5px rgba(0, 1, 1, 0.2);
 }
 
 .nav {
@@ -118,7 +120,7 @@ input[type="radio"].visually-hidden {
   color: #81b3d2;
 }
 
-.menu a:active {
+.menu a:not(.menu-active):active {
   color: rgba(0, 0, 0, 0.3);
 }
 
@@ -440,11 +442,18 @@ input[type="radio"].visually-hidden {
   text-align: center;
 }
 
+.search-item span {
+  display: inline-block;
+}
+
 .person-minus,
 .person-plus {
+  position: relative;
+
   width: 38px;
   height: 38px;
 
+  vertical-align: bottom;
   font-weight: bold;
   color: #a9a9a9;
 
@@ -452,16 +461,38 @@ input[type="radio"].visually-hidden {
   border: none;
 }
 
-.person-minus:hover,
-.person-minus:focus,
-.person-plus:hover,
-.person-plus:focus {
-  color: #000000;
+.person-minus::before,
+.person-plus::before,
+.person-plus::after {
+  content: "";
+
+  position: absolute;
+  top: 17px;
+  left: 13px;
+
+  width: 12px;
+  height: 3px;
+
+  background-color: #a9a9a9;
 }
 
-.person-minus:active,
-.person-plus:active {
-  color: #81b3d2;
+.person-plus::after {
+  transform: rotate(90deg);
+}
+
+.person-minus:hover::before,
+.person-minus:focus::before,
+.person-plus:hover::before,
+.person-plus:hover::after,
+.person-plus:focus::before,
+.person-plus:focus::after {
+  background-color: #000000;
+}
+
+.person-minus:active::before,
+.person-plus:active::before,
+ .person-plus:active::after {
+  background-color: #81b3d2;
 }
 
 .find-button {
@@ -530,7 +561,7 @@ input[type="radio"].visually-hidden {
 }
 
 .filtres legend {
-  margin-top: 24px;
+  margin-bottom: 26px;
 
   font-size: 16px;
   font-weight: bold;
@@ -540,6 +571,47 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.filtres-option {
+  margin-bottom: 23px;
+}
+
+.filtres-option  label {
+  position: relative;
+}
+
+/* .filtres-option  label:focus {
+  outline: 2px solid red;
+} */
+
+.checkbox-indicator {
+  position: absolute;
+  left: 0;
+
+  width: 27px;
+  height: 23px;
+
+  background-image: url('../img/hotels-checkbox-off.svg');
+  background-repeat: no-repeat;
+}
+
+.checkbox-indicator:focus {
+
+}
+
+.filtres-option input[type="checkbox"]:checked + .checkbox-indicator  {
+  background-image: url('../img/hotels-checkbox-on.svg');
+}
+
+.filtres-option input[type="checkbox"]:focus + .checkbox-indicator  {
+  border-color: #663d15;
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
+.filtres-option label {
+  padding-left: 39px;
 }
 
 .cost-container {
@@ -649,6 +721,9 @@ input[type="radio"].visually-hidden {
 }
 
 .range-toggle:hover {
+  width: 6px;
+  height: 6px;
+
   background: #1c4f80;
 }
 
@@ -674,6 +749,13 @@ input[type="radio"].visually-hidden {
   border: 2px solid #ffffff;
   border-radius: 2px;
   cursor: pointer;
+}
+
+.btn-transparent:hover,
+.btn-transparent:focus {
+  color: #000000;
+
+  background-color: #ffffff;
 }
 
 .wrap-hotels {
@@ -976,19 +1058,19 @@ input[type="radio"].visually-hidden {
 .copyright a {
   display: inline-block;
   vertical-align: middle;
-  width: 120px;
-  height: 45px;
+  width: 115px;
+  height: 41px;
 
-  background-image: url('../img/academi-icon.svg');
+  background-image: url('../img/logo_name.svg');
   background-position: 0 0;
   background-color: yellow;
 }
 
 .copyright a:hover,
 .copyright a:focus {
-  color: #81b3d2;
+  background-color: #81b3d2;
 }
 
 .copyright a:active {
-  color: #bdbbbc;
+  background-color: #bdbbbc;
 }
