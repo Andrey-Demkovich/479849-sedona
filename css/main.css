@@ -127,7 +127,7 @@ input[type="radio"].visually-hidden {
   background-image: url('../img/index-welcome-fixed.jpg');
   background-repeat: no-repeat;
   background-color: #81b3d2;
-  background-position: center -50px;
+  background-position: center -56px;
 }
 
 .promo::after {
@@ -145,7 +145,7 @@ input[type="radio"].visually-hidden {
 }
 
 .sigths {
-  margin-bottom: 55px;
+  margin-bottom: 50px;
 }
 
 .sigths-header {
@@ -156,7 +156,7 @@ input[type="radio"].visually-hidden {
 .sigths-header h1 {
   margin: 0px;
   padding: 0px;
-  margin-bottom: 36px;
+  margin-bottom: 30px;
 
   font-size: 21px;
   line-height: 26px;
@@ -165,7 +165,7 @@ input[type="radio"].visually-hidden {
 
 .sigths-header p {
   margin: 0;
-  margin-bottom: 55px;
+  margin-bottom: 53px;
   padding: 0;
 }
 
@@ -203,12 +203,12 @@ input[type="radio"].visually-hidden {
 .sigths-item h3 {
   margin: 0;
   margin-top: 48px;
-  margin-bottom: 26px;
+  margin-bottom: 23px;
 }
 
 .sigths-item p {
   margin: 0;
-  margin-bottom: 26px;
+  margin-bottom: 20px;
 }
 
 .sigths-item .wrapper-img {
@@ -222,7 +222,7 @@ input[type="radio"].visually-hidden {
 .sigths-item img {
   position: absolute;
   display: block;
-  top: -78px;
+  top: -77px;
 }
 
 .sigths-item.gray {
@@ -248,7 +248,7 @@ input[type="radio"].visually-hidden {
 
 .features-item {
   width: 400px;
-  min-height: 332px;
+  min-height: 330px;
   padding-left: 47px;
   padding-right: 47px;
 
@@ -258,7 +258,7 @@ input[type="radio"].visually-hidden {
 .features-item h3 {
   position: relative;
   margin: 0;
-  padding-top: 162px;
+  padding-top: 161px;
   margin-bottom: 24px;
 }
 
@@ -266,24 +266,31 @@ input[type="radio"].visually-hidden {
   content: '';
 
   position: absolute;
-  top: 60px;
-  left: 115px;
 
   width: 75px;
   height: 75px;
 }
 
 .features-item:first-child h3::before {
+  top: 60px;
+  left: 115px;
+
   background-image: url('../img/index-house.svg');
   background-repeat: no-repeat;
 }
 
 .features-item:nth-child(2) h3::before {
+  top: 61px;
+  left: 114px;
+
   background-image: url('../img/index-fod.svg');
   background-repeat: no-repeat;
 }
 
 .features-item:last-child h3::before {
+  top: 56px;
+  left: 121px;
+
   background-image: url('../img/index-suvenir.svg');
   background-repeat: no-repeat;
 }
@@ -296,7 +303,7 @@ input[type="radio"].visually-hidden {
 
 .search h2 {
   margin: 0px;
-  margin-bottom: 30px;
+  margin-bottom: 24px;
   padding: 0px;
 
   font-size: 30px;
@@ -305,7 +312,7 @@ input[type="radio"].visually-hidden {
 
 .search p {
   margin: 0px;
-  margin-bottom: 50px;
+  margin-bottom: 45px;
   padding: 0px;
 
   line-height: 24px;
@@ -346,7 +353,7 @@ input[type="radio"].visually-hidden {
 
   width: 568px;
   margin: 0 auto;
-  padding-top: 53px;
+  padding-top: 54px;
 
   background-color: #ffffff;
 }
@@ -361,6 +368,7 @@ input[type="radio"].visually-hidden {
 
 .search-form,
 .search-form input {
+  text-transform: inherit;
   font-size: 14px;
   line-height: 26px;
   font-weight: bold;
@@ -375,7 +383,7 @@ input[type="radio"].visually-hidden {
   align-items: baseline;
 
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 29px;
   padding: 0;
 }
 
@@ -394,13 +402,15 @@ input[type="radio"].visually-hidden {
 }
 
 .search-item.date input {
-  padding-left: 12px;
+  width: 346px;
+  min-height: 38px;
+  padding-left: 11px;
   padding-right: 30px;
 }
 
 .calendar-button {
   position: absolute;
-  right: 8px;
+  right: 9px;
   top: 8px;
 
   padding: 0;
@@ -417,17 +427,20 @@ input[type="radio"].visually-hidden {
   fill: #81b3d2;
 }
 
-.search-item.date input {
-  width: 350px;
-  min-height: 38px;
-}
-
 .search-item.persons input {
   width: 38px;
   min-height: 38px;
   margin-right: -4px;
   margin-left: -4px;
   text-align: center;
+}
+
+.search-adult {
+  margin-left: 14px;
+}
+
+.search-label-children {
+  margin-left: 26px;
 }
 
 .search-item span {
@@ -455,7 +468,7 @@ input[type="radio"].visually-hidden {
   content: "";
 
   position: absolute;
-  top: 17px;
+  top: 18px;
   left: 13px;
 
   width: 12px;
@@ -520,14 +533,14 @@ input[type="radio"].visually-hidden {
 }
 
 .filtres {
-  padding-top: 30px;
-  padding-bottom: 32px;
+  padding-top: 28px;
+  padding-bottom: 10px;
 
   color: #ffffff;
 
   background-color: #81b3d2;
   background-image: url('../img/hotels-filter-background.jpg');
-  background-position: 0 0;
+  background-position: 0 -55px;
   background-repeat: no-repeat;
 }
 
@@ -545,11 +558,11 @@ input[type="radio"].visually-hidden {
 }
 
 .filtres .infrastructure {
-  margin-right: 112px;
+  margin-right: 118px;
 }
 
 .filtres legend {
-  margin-bottom: 26px;
+  margin-bottom: 24px;
 
   font-size: 16px;
   font-weight: bold;
@@ -562,7 +575,7 @@ input[type="radio"].visually-hidden {
 }
 
 .filtres-option {
-  margin-bottom: 23px;
+  margin-bottom: 24px;
 }
 
 .filtres-option  label {
@@ -599,7 +612,7 @@ input[type="radio"].visually-hidden {
 }
 
 .filtres-option label {
-  padding-left: 39px;
+  padding-left: 40px;
 }
 
 .cost-container {
@@ -764,7 +777,7 @@ input[type="radio"].visually-hidden {
 }
 
 .sorting .title {
-  margin-right: 50px;
+  margin-right: 47px;
 
   font-size: 21px;
   line-height: 26px;
@@ -780,28 +793,35 @@ input[type="radio"].visually-hidden {
   color: #000000;
 }
 
+.sorting .type {
+  margin-right: 39px;
+}
+
 .sorting-list {
   display: flex;
 
   margin: 0;
-  margin-left: 40px;
+  /* margin-left: 40px; */
   padding: 0;
   list-style: none;
 }
 
 .sorting-item {
-  margin-left: 32px;
+  margin-right: 33px;
+  padding: 0;
 }
 
 .sorting-button {
+  padding: 0;
+
   font-size: 12px;
-  line-height: 18px;
+  line-height: 12px;
   text-transform: uppercase;
   color: rgba(0, 0, 0, 0.3);
 
   background: none;
   border: none;
-  border-bottom: 1px dashed #81b3d2;
+  border-bottom: 1px dotted #81b3d2;
 }
 
 .sorting-button:hover,
@@ -1035,6 +1055,10 @@ input[type="radio"].visually-hidden {
 .main-footer .copyright {
   line-height: 26px;
   color: #000000;
+}
+
+.copyright span {
+  margin-right: 4px;
 }
 
 .copyright a {
