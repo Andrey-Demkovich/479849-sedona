@@ -1,9 +1,11 @@
 html {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 *,*::before,*::after {
-  box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
 }
 
 a {
@@ -41,7 +43,9 @@ input[type="radio"].visually-hidden {
 
   white-space: nowrap;
 
-  clip-path: inset(100%);
+  -webkit-clip-path: inset(100%);
+
+          clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -50,7 +54,8 @@ input[type="radio"].visually-hidden {
   width: 1200px;
   margin: 0 auto;
   background-color: #ffffff;
-  box-shadow: 0 0 15px 5px rgba(0, 1, 1, 0.2);
+  -webkit-box-shadow: 0 0 15px 5px rgba(0, 1, 1, 0.2);
+          box-shadow: 0 0 15px 5px rgba(0, 1, 1, 0.2);
 }
 
 .nav {
@@ -69,8 +74,12 @@ input[type="radio"].visually-hidden {
 }
 
 .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 
   margin: 0;
   padding: 0;
@@ -170,8 +179,11 @@ input[type="radio"].visually-hidden {
 }
 
 .sigths-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 
   margin: 0;
   padding: 0;
@@ -183,13 +195,18 @@ input[type="radio"].visually-hidden {
 }
 
 .sigths-item-blue {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 
   background-color: #81b3d2;
 }
 
 .sigths-item-blue.reverse {
-  flex-direction: row-reverse;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
 }
 
 .sigths-item .info {
@@ -239,6 +256,8 @@ input[type="radio"].visually-hidden {
 }
 
 .features-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 
   margin: 0;
@@ -380,9 +399,17 @@ input[type="radio"].visually-hidden {
 .search-form p {
   position: relative;
 
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
   display: flex;
-  justify-content: space-between;
-  align-items: baseline;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
 
   margin: 0;
   margin-bottom: 29px;
@@ -484,7 +511,9 @@ input[type="radio"].visually-hidden {
 }
 
 .person-plus::after {
-  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 
 .person-minus:hover::before,
@@ -553,6 +582,8 @@ input[type="radio"].visually-hidden {
 }
 
 .filtres-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 
   padding-left: 73px;
@@ -626,7 +657,8 @@ input[type="radio"].visually-hidden {
 
 .cost-container {
   margin-left: auto;
-  box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
 }
 
 .filter-range {
@@ -666,7 +698,9 @@ input[type="radio"].visually-hidden {
   height: 22px;
 
   background: #ffffff;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .price-controls label {
@@ -729,7 +763,8 @@ input[type="radio"].visually-hidden {
   background: #ababab;
   border: 8px solid #ffffff;
   border-radius: 50%;
-  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  -webkit-box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+          box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
   cursor: pointer;
 }
 
@@ -777,8 +812,12 @@ input[type="radio"].visually-hidden {
 }
 
 .sorting {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: baseline;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
 
   min-height: 86px;
   padding-top: 28px;
@@ -810,6 +849,8 @@ input[type="radio"].visually-hidden {
 }
 
 .sorting-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 
   margin: 0;
@@ -918,6 +959,8 @@ input[type="radio"].visually-hidden {
 }
 
 .hotels-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 
   padding-top: 25px;
@@ -956,8 +999,12 @@ input[type="radio"].visually-hidden {
 }
 
 .hotels-info-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: baseline;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
 }
 
 .hotels-info-left {
@@ -980,10 +1027,19 @@ input[type="radio"].visually-hidden {
 }
 
 .hotels-item .ratings {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 
   margin-left: auto;
 }
@@ -1019,8 +1075,12 @@ input[type="radio"].visually-hidden {
 }
 
 .main-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 
   position: relative;
 
@@ -1050,9 +1110,14 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 
   width: 151px;
   margin: auto;
@@ -1062,11 +1127,17 @@ input[type="radio"].visually-hidden {
 }
 
 .social-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 46px;
-  min-height: 48px;
+  height: 48px;
 }
 
 .social-button:active path {
@@ -1086,7 +1157,7 @@ input[type="radio"].visually-hidden {
   display: inline-block;
   vertical-align: middle;
   width: 115px;
-  height: 41px;
+  min-height: 41px;
 }
 
 .copyright-icon:hover path,
