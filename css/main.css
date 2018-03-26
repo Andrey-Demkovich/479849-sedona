@@ -49,12 +49,16 @@ input[type="radio"].visually-hidden {
 .page-wrapper {
   width: 1200px;
   margin: 0 auto;
+
   background-color: #ffffff;
   box-shadow: 0 0 15px 5px rgba(0, 1, 1, 0.2);
 }
 
 .nav {
   position: relative;
+
+  padding-top: 14px;
+  min-height: 56px;
 
   font-weight: bold;
   line-height: 26px;
@@ -65,17 +69,17 @@ input[type="radio"].visually-hidden {
 .logo {
   position: absolute;
   left: calc(50% - 69px);
+  top: 0;
   z-index: 1;
 }
 
 .menu {
   display: flex;
-  align-items: center;
 
   margin: 0;
   padding: 0;
   list-style: none;
-  min-height: 56px;
+  /* min-height: 42px; */
 }
 
 .menu-item {
@@ -691,6 +695,7 @@ input[type="radio"].visually-hidden {
 
 .price-controls input {
   width: 50px;
+  height: 30px;
   margin: 0;
 
   color: inherit;
@@ -813,7 +818,6 @@ input[type="radio"].visually-hidden {
   display: flex;
 
   margin: 0;
-  /* margin-left: 40px; */
   padding: 0;
   list-style: none;
 }
@@ -1020,7 +1024,6 @@ input[type="radio"].visually-hidden {
 
 .main-footer {
   display: flex;
-  align-items: center;
 
   position: relative;
 
@@ -1038,8 +1041,21 @@ input[type="radio"].visually-hidden {
   width: 400px;
   margin: 0;
   padding: 0;
+
   text-align: center;
   vertical-align: middle;
+}
+
+.footer-item.heshtag {
+  padding-top: 44px;
+}
+
+.footer-item.social {
+  padding-top: 36px;
+}
+
+.footer-item.copyright {
+  padding-top: 40px;
 }
 
 .main-footer .heshtag {
@@ -1047,6 +1063,10 @@ input[type="radio"].visually-hidden {
   line-height: 26px;
   font-weight: bold;
   color: #000000;
+}
+
+.main-footer .hechtag-center {
+  vertical-align: middle;
 }
 
 .footer-social {
@@ -1065,8 +1085,9 @@ input[type="radio"].visually-hidden {
   display: flex;
   justify-content: center;
   align-items: center;
+
   width: 46px;
-  min-height: 48px;
+  height: 48px;
 }
 
 .social-button:active path {
