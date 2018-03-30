@@ -563,6 +563,7 @@ input[type="radio"].visually-hidden {
 
 .map-google {
   display: block;
+  border: 0;
 }
 
 .filtres {
