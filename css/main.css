@@ -210,6 +210,9 @@ input[type="radio"].visually-hidden {
   margin: 0;
   margin-top: 48px;
   margin-bottom: 23px;
+  padding: 0 52px;
+
+  font-size: 21px;
 }
 
 .sigths-item p {
@@ -239,10 +242,6 @@ input[type="radio"].visually-hidden {
   padding-right: 69px;
 
   background-color: #eeeeee;
-}
-
-.sigths-item h3 {
-  font-size: 21px;
 }
 
 .features-list {
@@ -562,6 +561,10 @@ input[type="radio"].visually-hidden {
   display: block;
 }
 
+.map-google {
+  display: block;
+}
+
 .filtres {
   padding-top: 28px;
   padding-bottom: 10px;
@@ -816,7 +819,8 @@ input[type="radio"].visually-hidden {
 }
 
 .sorting .title {
-  margin-right: 47px;
+  margin-right: 34px;
+  min-width: 130px;
 
   font-size: 21px;
   line-height: 26px;
@@ -838,6 +842,7 @@ input[type="radio"].visually-hidden {
 
 .sorting-list {
   display: flex;
+  flex-wrap: wrap;
 
   margin: 0;
   padding: 0;
@@ -846,6 +851,7 @@ input[type="radio"].visually-hidden {
 }
 
 .sorting-item {
+  max-width: 76px;
   margin-right: 33px;
   padding: 0;
 }
@@ -886,7 +892,7 @@ input[type="radio"].visually-hidden {
   position: relative;
 
   margin-left: auto;
-  width: 35px;
+  min-width: 35px;
   height: 16px;
 }
 
@@ -1149,4 +1155,17 @@ input[type="radio"].visually-hidden {
 .copyright-icon:active path,
 .copyright-icon:active rect {
   fill: #bdbbbc;
+}
+
+@keyframes exit {
+  0% {transform: translateX(0px);}
+  70% {transform: translateX(-10px);}
+  90% {transform: translateX(30px);}
+  100% {transform: translateX(-1000px);}
+}
+
+.modal-close {
+  animation-name: exit;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
 }
